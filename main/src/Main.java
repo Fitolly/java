@@ -1,6 +1,6 @@
 
-import javax.management.BadStringOperationException;
-import java.util.Locale;
+//import javax.management.BadStringOperationException;
+//import java.util.Locale;
 import java.util.Scanner;
 import java.util.InputMismatchException;
 
@@ -11,7 +11,6 @@ public class Main {
 
     public static void main(String[] args) {
         printHeader();
-
         boolean continueProgram = true;
 
         while (continueProgram) {
@@ -23,33 +22,23 @@ public class Main {
                 printResults(x, epsilon);
 
             } catch (IllegalArgumentException e) {
-                System.out.println("\n❌ Ошибка: " + e.getMessage());
-                System.out.println("Попробуйте ввести данные заново.\n");
+                System.out.println("\nerror: " + e.getMessage());
+                System.out.println("input again\n");
             } catch (InputMismatchException e) {
-                System.out.println("\n❌ Ошибка: введите число, а не текст!");
+                System.out.println("\ninput a number, not a string");
                 scanner.next();
-                System.out.println("Попробуйте ввести данные заново.\n");
+                System.out.println("input again\n");
             }
-
             continueProgram = askToContinue();
         }
 
-        System.out.println("Программа завершена. Спасибо за использование!");
         scanner.close();
     }
-
-    /**
-     * Выводит заголовок программы.
-     */
     private static void printHeader() {
-        System.out.println("=".repeat(60));
-        System.out.println("  ВЫЧИСЛЕНИЕ ln(1-x) С ПОМОЩЬЮ РЯДА ТЕЙЛОРА");
-        System.out.println("  Ряд: ln(1-x) = -x - x²/2 - x³/3 - x⁴/4 - ...");
-        System.out.println("  Область определения: x ∈ [-1, 1)");
-        System.out.println("=".repeat(60));
+        System.out.println("Taylor's serie: ln(1-x) = -x - x²/2 - x³/3 - x⁴/4 - ...");
+        System.out.println(" Diapason: x ∈ [-1, 1)");
         System.out.println();
     }
-
 
     private static void printResults(double x, double epsilon) {
         double taylorResult = calculator.calculate(x, epsilon);
@@ -58,7 +47,7 @@ public class Main {
         System.out.println("\nthe result");
         System.out.printf("Taylor's serie (ε = %.0e): %10.3f%n", epsilon, taylorResult);
         System.out.printf("Standart function: %10.3f%n", standardResult);
-        System.out.printf("Difference ", Math.abs(taylorResult - standardResult));
+        System.out.printf("Difference: %10.3f%n", Math.abs(taylorResult - standardResult)); //форматирование циферок
 
     }
 
@@ -68,56 +57,31 @@ public class Main {
                 System.out.print("Write x in diapason of [-1;1): ");
                 double x = scanner.nextDouble();
                 calculator.validateInput(x, 1.0);
-
-                if (x == -1.0) {
-                    System.out.print("⚠️ При x = -1 ряд сходится медленно. Продолжить? (да/нет): ");
-                    String answer = scanner.next().toLowerCase();
-                    if (!answer.equals("да") && !answer.equals("yes") && !answer.equals("y")) {
-                        continue;
-                    }
-                }
-
                 return x;
-
-            } catch (InputMismatchException e) {
-                System.out.println("❌ Ошибка: введите число!");
+            }
+            catch (InputMismatchException e) {
+                System.out.println("write a num");
                 scanner.next();
             } catch (IllegalArgumentException e) {
-                System.out.println("❌ Ошибка: " + e.getMessage());
+                System.out.println("error: " + e.getMessage());
             }
         }
     }
 
-    /**
-     * Вводит значение k с клавиатуры с проверкой.
-     *
-     * @return введенное значение k
-     */
     private static int inputKNum() {
         while (true) {
             try {
-                System.out.print("Введите значение k (натуральное число, k > 0): ");
+                System.out.print("input k (must be natural): ");
                 int k = scanner.nextInt();
 
                 if (k <= 0) {
-                    System.out.println("❌ Ошибка: k должно быть натуральным числом (k > 0)!");
+                    System.out.println("k must be natural");
                     continue;
                 }
-
                 double epsilon = Math.pow(10, -k);
-                if (epsilon < 1e-15) {
-                    System.out.println("⚠️ Предупреждение: очень маленькая точность (ε = " + epsilon + ")");
-                    System.out.print("   Продолжить? (да/нет): ");
-                    String answer = scanner.next().toLowerCase();
-                    if (!answer.equals("да") && !answer.equals("yes") && !answer.equals("y")) {
-                        continue;
-                    }
-                }
-
                 return k;
-
             } catch (InputMismatchException e) {
-                System.out.println("❌ Ошибка: введите целое число!");
+                System.out.println("input integer number");
                 scanner.next();
             }
         }
