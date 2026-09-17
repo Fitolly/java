@@ -15,7 +15,6 @@ public class TaylorCalculator {
 
         return sum;
     }
-
     public void validateInput(double x, double epsilon) {
         if (x < -1.0 || x >= 1.0) {
             throw new IllegalArgumentException(
