@@ -1,9 +1,7 @@
 import java.io.*;
 
 public class TextInOut {
-
     private final BufferedReader br;
-
     public TextInOut() {
         this.br = new BufferedReader(new InputStreamReader(System.in));
     }
