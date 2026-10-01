@@ -1,0 +1,3 @@
+Smith John Alex; Course: 2; Group: PO-21; Session: 1; Average Grade: 9,50
+Smith John Alex; Course: 2; Group: PO-21; Session: 2; Average Grade: 8,50
+Doe Jane Mary; Course: 3; Group: CS-31; Session: 1; Average Grade: 9,50

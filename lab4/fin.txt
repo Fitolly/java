@@ -1,0 +1,12 @@
+STUDENT;Smith John Alex;2;PO-21
+RECORD;1;Mathematics;9;true
+RECORD;1;Physics;10;true
+RECORD;1;English;1;false
+RECORD;2;Algorithms;8;true
+RECORD;2;Database;9;true
+RECORD;2;OS;1;false
+
+STUDENT;Doe Jane Mary;3;CS-31
+RECORD;1;Mathematics;10;true
+RECORD;1;Programming;9;true
+RECORD;1;Philosophy;1;false
