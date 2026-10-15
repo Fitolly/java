@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.StringTokenizer;
 
-public class StringCorrection {
+public class MainInOut {
 
     public static void main(String[] args) {
         try {

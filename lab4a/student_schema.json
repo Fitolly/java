@@ -1,0 +1,10 @@
+{
+  "type": "object",
+  "properties": {
+    "name": { "type": "string" },
+    "age": { "type": "integer", "minimum": 16 },
+    "gpa": { "type": "number" },
+    "isEnrolled": { "type": "boolean" }
+  },
+  "required": ["name", "age", "gpa", "isEnrolled"]
+}
