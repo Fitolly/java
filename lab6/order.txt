@@ -1,0 +1,9 @@
+Award Costs Calculation
+Long date/time: 31 октября 2026 г., 22:17:52 MSK
+
+Select Congratulator:
+Select Gift:
+Concert needed: No
+Regular customer: No
+
+Total cost: 0,00 rub
