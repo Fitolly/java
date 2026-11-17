@@ -1,8 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="52062ce4-2a6b-42db-87eb-fa5c96e6fd3b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../lab4/average.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../lab4/average.txt" afterDir="false" />
+    <list default="true" id="f131fc95-c40b-4199-accc-5bb2689f0e7b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../lab2/lab2.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab3/lab3.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab4/lab4.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../main/Kr1.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab4a/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../lab4a/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab6/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../lab6/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,16 +19,17 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 6,
-  "fromUser": false
+  "customColor": "",
+  "associatedIndex": 6
 }]]></component>
-  <component name="ProjectId" id="3MdbvsmBo8x40tqOOLeZuoqB8xN" />
+  <component name="ProjectId" id="3MdrM60Ax4KQvByfV8FScsGwRev" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.SortingLabApp.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
@@ -32,6 +39,7 @@
     "kotlin-language-version-configured": "true",
     "node.js.detected.package.jshint": "true",
     "node.js.selected.package.jshint": "",
+    "nodejs_package_manager_path": "npm",
     "onboarding.tips.debug.path": "C:/D/projects/java/lab7/src/Main.java"
   }
 }]]></component>
@@ -45,26 +53,15 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="52062ce4-2a6b-42db-87eb-fa5c96e6fd3b" name="Changes" comment="" />
-      <created>1795683629499</created>
+      <changelist id="f131fc95-c40b-4199-accc-5bb2689f0e7b" name="Changes" comment="" />
+      <created>1795691236016</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1795683629499</updated>
+      <updated>1795691236016</updated>
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/SortingLabApp.java</url>
-          <line>30</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
